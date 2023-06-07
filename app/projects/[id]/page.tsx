@@ -4,9 +4,9 @@ import { FiGithub, FiArrowUpRight } from "react-icons/fi";
 import { Project } from "@/types";
 
 const getProject = async (id: string): Promise<Project> => {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/project?id=${id}`)
-  const data = await res.json()
-  return data.projects.data
+  const res = await fetch(`https://my-site-cms-production-bc2e.up.railway.app/api/projects/${id}?populate=*`)
+    const data = await res.json()
+    return data.data
 }
 
 export default async function Project({ params }: any) {

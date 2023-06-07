@@ -6,9 +6,9 @@ import ProjectCard from './ProjectCard'
 import { Project } from '@/types'
 
 const getProjects = async (): Promise<Project[]> => {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/projects`)
+    const res = await fetch("https://my-site-cms-production-bc2e.up.railway.app/api/projects?populate=*")
     const data = await res.json()
-    return data.projects.data
+    return data.data
 }
 
 export default async function ProjectList() {
