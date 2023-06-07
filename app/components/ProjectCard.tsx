@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import LanguageIcon from "./LanguageIcon";
-import { Project } from "../types";
+import { Project } from "@/types";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
