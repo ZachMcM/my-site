@@ -10,7 +10,7 @@ export default function Skills() {
             <ul className="text-gray-500 dark:text-gray-400 text-lg flex flex-wrap gap-2.5 max-w-3xl">
                 {
                     skills.map((skill: string) => {
-                        return <li key={uid()} className="py-2.5 px-5 shadow-xl rounded-md dark:bg-gray-800 flex items-center space-x-2.5"><p>{skill}</p> <LanguageIcon language={skill}/></li>
+                        return <li key={uid()} className="py-2.5 px-5 shadow-xl rounded-md dark:bg-gray-800 flex items-center space-x-2.5"><p className="capitalize">{skill}</p> <LanguageIcon language={skill}/></li>
                     })
                 }
             </ul>

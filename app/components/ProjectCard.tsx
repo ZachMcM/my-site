@@ -28,7 +28,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                 key={Math.random()}
                 className="py-2 px-3 shadow-xl rounded-md dark:bg-gray-800 flex items-center space-x-2.5"
               >
-                <p>{skill}</p> <LanguageIcon language={skill} />
+                <p className="capitalize">{skill}</p> <LanguageIcon language={skill} />
               </li>
             );
           })}
