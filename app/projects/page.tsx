@@ -34,7 +34,7 @@ export default function ProjectList() {
                 <input
                     onChange={(e) => setSearch(e.target.value)}
                     placeholder='Search by name or technology'
-                    className='text-sm md:text-md w-full bg-transparent placeholder:text-gray-500 placeholder:dark:text-gray-400 outline-none border-none'
+                    className='text-md md:text-lg w-full bg-transparent placeholder:text-gray-500 placeholder:dark:text-gray-400 outline-none border-none'
                 />
             </div>
             <div className='flex flex-col xl:grid grid-cols-2 gap-14 w-full'>
