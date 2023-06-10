@@ -50,7 +50,7 @@ export default function ProjectList() {
                 {
                     data &&
                     data.filter((project: Project) => {
-                        return project.attributes.name.includes(search) || project.attributes.techstack.some((skill: string) => skill.includes(search.toLowerCase()))
+                        return project.attributes.name.toLowerCase().includes(search.toLowerCase()) || project.attributes.techstack.some((skill: string) => skill.includes(search.toLowerCase()))
                     }).sort((a: Project, b: Project) => {
                         return (new Date(b.attributes.createdDate)).getTime() - (new Date(a.attributes.createdDate)).getTime()
                     }).map((project: Project) => {
