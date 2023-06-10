@@ -6,7 +6,7 @@ export default function Skills() {
     return (
         <div className='flex flex-col space-y-4'>
             <h3 className="text-3xl font-semibold">My Skills/Tech Stack ⚙️</h3>
-            <p className="text-gray-500 dark:text-gray-400 text-lg flex flex-wrap gap-2.5 max-w-3xl">Here are the skills/technologies that I use and am proficient in. A lot of my projects are written in Typescript, but my favorite programming language is Java.</p>
+            <p className="text-gray-500 dark:text-gray-400 text-lg flex flex-wrap gap-2.5 max-w-3xl">Here are the skills/technologies that I use and am proficient in. My favorite programming language currently is Typescript.</p>
             <ul className="text-gray-500 dark:text-gray-400 text-lg flex flex-wrap gap-2.5 max-w-3xl">
                 {
                     skills.map((skill: string) => {
