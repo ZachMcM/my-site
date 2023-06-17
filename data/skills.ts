@@ -10,5 +10,6 @@ export default [
     "Java",
     "Git",
     "Prisma",
-    "Postgresql"
+    "Postgresql",
+    "Supabase"
 ]
