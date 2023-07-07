@@ -9,7 +9,7 @@ import { redirect } from 'next/navigation'
 import { useState } from 'react'
 
 export default function ProjectList() {
-    const { data, isLoading, isError, error } = useQuery({
+    const { data, isLoading, isError } = useQuery({
         queryFn: async () => {
             const res = await fetch("https://my-site-cms-production-bc2e.up.railway.app/api/projects?populate=*")
             const data = await res.json()

@@ -33,7 +33,7 @@ export default function Navbar() {
     const toggleTheme = () => {
         if (document.documentElement.classList.contains('dark')) {
             document.documentElement.classList.remove('dark')
-            localStorage.removeItem('theme')
+            localStorage.theme = 'light'
             setTheme('light')
         } else {
             document.documentElement.classList.add('dark')
