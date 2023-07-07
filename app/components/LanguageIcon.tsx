@@ -23,7 +23,7 @@ const languageIconMap: LanguageIconMap = {
     "html": SiHtml5,
     "prisma": SiPrisma,
     "postgresql": SiPostgresql,
-    "supabase": SiSupabase
+    "supabase": SiSupabase,
 }
 
 export default function( {language} : { language: string }) {
